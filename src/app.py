@@ -10,7 +10,9 @@ server=app.server
 data=pd.read_excel("../datos/AREAS Y DESORILLES LEAR_(2025).xlsx",sheet_name=None)
 AREAS=data["AREA"]
 app.layout=html.Div(children=[html.H1("DASHBOARD TEST"),
-                             
+                              html.Div([
+                                  html.Label("Hola Mundo")
+                                  ])
                              ])
 
 
