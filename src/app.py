@@ -7,7 +7,7 @@ import pandas as pd
 app=dash.Dash(external_stylesheets=[dbc.themes.FLATLY])
 server=app.server
 
-data=pd.read_excel("datos/AREAS Y DESORILLES LEAR_(2025).xlsx",sheet_name=None)
+data=pd.read_excel("../datos/AREAS Y DESORILLES LEAR_(2025).xlsx",sheet_name=None)
 AREAS=data["AREA"]
 app.layout=html.Div(children=[html.H1("DASHBOARD TEST"),
                               html.Div("Hola mundo :)")
